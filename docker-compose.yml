@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:17.1
+    restart: always
+    environment:
+      POSTGRES_USER: superuser
+      POSTGRES_PASSWORD: superuser
+      POSTGRES_DB: banc
+    ports:
+      - 5432:5432
